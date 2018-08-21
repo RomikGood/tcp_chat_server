@@ -10,7 +10,7 @@ def setup_server():
         socket.SOCK_STREAM,  # Type
         socket.IPPROTO_TCP,  # Protocol
     )
-    # Bind an endpoint (HOST, PORT) to the socket
+    # Bind an endpoint (HOST, PORT) to the socket must be tuble
     echo_server.bind(('127.0.0.1', 8000))
     # Activate the listener for the socket
     echo_server.listen(1)
